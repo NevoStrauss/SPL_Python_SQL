@@ -1,5 +1,5 @@
 from DTO import *
-import sqlite3
+
 
 class Vaccines:
     def __init__(self, con):

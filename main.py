@@ -1,6 +1,4 @@
 import sys
-from DTO import *
-from DAO import *
 from _Repository import *
 
 
@@ -50,8 +48,8 @@ class Output:
     def update_output(self):
         output_line = str(self.total_inventory)+","+str(self.total_demand)+","+\
                  str(self.total_received)+","+str(self.total_sent)+"\n"
-        print(output_line)
         self.output.write(output_line)
+
 
 if __name__ == '__main__':
     main(sys.argv)
